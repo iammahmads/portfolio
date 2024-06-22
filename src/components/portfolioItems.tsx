@@ -59,7 +59,7 @@ const portfolioItems: portfolioItemType[] = [
       "Node js",
       "Express",
       "MongoDb",
-      "modemailer",
+      "Nodemailer",
       "Tailwind",
     ],
     repositoryLink: "https://github.com/mahmads0323/Client-Hospital-Managment",
