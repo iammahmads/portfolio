@@ -22,7 +22,7 @@ const LeftCard = ({
         <div className="p-4 flex flex-col gap-2 text-primary lg:w-[45%]">
           <h2 className="font-semibold text-base md:text-lg">
             Project:{" "}
-            <span className="text-textDecription font-medium">{title}</span>
+            <span className="text-textDecription font-semibold">{title}</span>
           </h2>
           <h3 className="font-semibold md:text-base">
             Description:{" "}
