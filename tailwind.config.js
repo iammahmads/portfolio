@@ -10,12 +10,17 @@ export default {
         textHeading: "#000000",
         textDecription: "#1f1f1f",
       },
-      backgroundImage: {
-        splashScreen: "url('/SPLASH_BG.png')",
-      },
     },
     keyframes: {
       showUp: {
+        "0%": {
+          opacity: "0",
+        },
+        "100%": {
+          opacity: "100",
+        },
+      },
+      fade: {
         "0%": {
           opacity: "0",
         },

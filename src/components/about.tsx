@@ -1,5 +1,4 @@
-import PROFILE_PHOTO from "/PROFILE_PHOTO.png";
-// import SPLASH_BG from "/SPLASH_BG.png"
+import STRATEGIES from "/3-STRATEGIES.png";
 
 const About = () => {
   return (
@@ -25,12 +24,12 @@ const About = () => {
           </p>
         </div>
 
-        <div className="lg:flex-[50%] lg:flex lg:justify-start">
-          <div className="h-[400px] w-full bg-splashScreen bg-top bg-no-repeat bg-contain flex justify-center lg:w-[90%] ">
+        <div className="lg:flex-[50%] lg:flex lg:justify-start lg:items-center">
+          <div className="h-[60%] w-full  flex justify-center lg:w-[90%] animate-[fade_2s_ease] ">
             <img
-              src={PROFILE_PHOTO}
+              src={STRATEGIES}
               alt="PROFILE_PHOTO"
-              className="w-[200px] h-[300px]"
+             
             />
           </div>
         </div>
@@ -38,5 +37,8 @@ const About = () => {
     </section>
   );
 };
+
+
+// bg-splashScreen bg-top bg-no-repeat bg-contain
 
 export default About;

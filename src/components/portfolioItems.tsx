@@ -2,11 +2,12 @@ import portfolioItemType from "./reusable/portfolioItemType";
 import URL_SHORTNER from "/URL_SHORTNER.png";
 import BLOGGER from "/BLOGGER.png"
 import ECOMMERECE from "/ECOMMERECE.png"
+import HOSPITAL from "/HOSPITAL.png"
 
 const portfolioItems: portfolioItemType[] = [
   {
     title: "URL shortner",
-    description: "shotening the really long URL's",
+    description: "shotening the really long URL's at ease",
     image: URL_SHORTNER,
     stack: [
       "React",
@@ -21,7 +22,7 @@ const portfolioItems: portfolioItemType[] = [
   },
   {
     title: "Blogger",
-    description: "Allowing user to create/read blogs",
+    description: "Allowing user to create and read blogs using their own accounts",
     image: BLOGGER,
     stack: [
       "React",
@@ -36,7 +37,7 @@ const portfolioItems: portfolioItemType[] = [
   },
   {
     title: "Ecommerce",
-    description: "Users can buy products",
+    description: "Users can view and buy products listed on website",
     image: ECOMMERECE,
     stack: [
       "React",
@@ -48,6 +49,20 @@ const portfolioItems: portfolioItemType[] = [
       "Tailwind",
     ],
     repositoryLink: "https://github.com/mahmads0323/dev-ecommerce",
+  },
+  {
+    title: "Hospital Mangment",
+    description: "Let patients and doctor interact with each other",
+    image: HOSPITAL,
+    stack: [
+      "React",
+      "Node js",
+      "Express",
+      "MongoDb",
+      "modemailer",
+      "Tailwind",
+    ],
+    repositoryLink: "https://github.com/mahmads0323/Client-Hospital-Managment",
   },
 ];
 
