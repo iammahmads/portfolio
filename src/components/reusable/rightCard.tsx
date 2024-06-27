@@ -13,7 +13,7 @@ const RightCard = ({
       {/* empty space */}
       <div className="hidden lg:block lg:w-[25%]"></div>
       {/* content */}
-      <div className="w-full flex flex-col-reverse bg-secondry rounded-lg shadow-md shadow-primary my-2 lg:w-[75%] lg:flex-row lg:justify-end lg:rounded-l-full lg:border-r lg:border-primary ">
+      <div className="w-full flex flex-col-reverse bg-secondry border border-primary shadow-md shadow-primary my-2 lg:w-[75%] lg:flex-row lg:justify-end lg:rounded-l-full lg:border-r lg:border-primary ">
         <div className="p-4 flex flex-col gap-2  text-primary lg:w-[45%] ">
           <h2 className=" font-semibold text-base md:text-lg">
             Project:{" "}
@@ -43,11 +43,11 @@ const RightCard = ({
           </a>
         </div>
 
-        <div className="p-1 lg:w-[45%]">
+        <div className="lg:w-[45%]">
           <img
             src={image}
             alt={image}
-            className="h-full w-full rounded-lg border border-primary"
+            className="h-full w-full"
           />
         </div>
       </div>

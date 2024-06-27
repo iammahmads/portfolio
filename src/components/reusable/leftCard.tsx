@@ -11,12 +11,12 @@ const LeftCard = ({
   return (
     <div className="w-full flex animate-[fade_2s_ease]">
       {/* content */}
-      <div className="w-full flex flex-col bg-secondry rounded-lg shadow-md shadow-primary my-2 lg:w-[75%] lg:flex-row  lg:rounded-r-full lg:border-r lg:border-primary ">
-        <div className="p-1 lg:w-[45%]">
+      <div className="w-full flex flex-col bg-secondry border border-primary shadow-md shadow-primary my-2 lg:w-[75%] lg:flex-row  lg:rounded-r-full lg:border-r lg:border-primary ">
+        <div className="lg:w-[45%]">
           <img
             src={image}
             alt={image}
-            className="h-full w-full rounded-lg border border-primary"
+            className="h-full w-full"
           />
         </div>
         <div className="p-4 flex flex-col gap-2 text-primary lg:w-[45%]">
