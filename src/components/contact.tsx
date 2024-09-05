@@ -36,7 +36,10 @@ const Contact = () => {
     });
     setIsFormSubmitting(false);
     if (responseData.includes("ERROR")) {
-      setErrorMessage("error in sending mail");
+      setErrorMessage("Error in sending mail");
+      setTimeout(() => {
+        setErrorMessage(initialErrorMessage);
+      }, 2000);
       return;
     }
     setFormDetails(initialDetails);
@@ -64,7 +67,7 @@ const Contact = () => {
               onChange={handleChangeName}
               autoComplete="off"
               required
-              className="w-[75vw] border border-primary rounded-lg py-1 px-2 text-textHeading focus:border-2 focus:outline-none  sm:w-[70vw] md:w-[60vw] lg:w-[50vw]"
+              className="w-[75vw] border-2 border-primary border-opacity-45 rounded-lg py-1 px-2 text-textHeading focus:border-opacity-100 focus:outline-none  sm:w-[70vw] md:w-[60vw] lg:w-[50vw]"
               placeholder="Enter full name"
             />
           </div>
@@ -78,7 +81,7 @@ const Contact = () => {
               onChange={handleChangeEmail}
               autoComplete="off"
               required
-              className="w-[75vw] border border-primary rounded-lg py-1 px-2 text-textHeading focus:border-2 focus:outline-none  sm:w-[70vw] md:w-[60vw] lg:w-[50vw]"
+              className="w-[75vw] border-2 border-primary border-opacity-45 rounded-lg py-1 px-2 text-textHeading focus:border-opacity-100 focus:outline-none  sm:w-[70vw] md:w-[60vw] lg:w-[50vw]"
               placeholder="Enter email"
             />
           </div>
@@ -91,7 +94,7 @@ const Contact = () => {
               onChange={handleChangeMessage}
               autoComplete="off"
               required
-              className="w-[75vw] border border-primary rounded-lg py-1 px-2 text-textHeading focus:border-2 focus:outline-none  sm:w-[70vw] md:w-[60vw] lg:w-[50vw]"
+              className="w-[75vw] border-2 border-primary border-opacity-45 rounded-lg py-1 px-2 text-textHeading focus:border-opacity-100 focus:outline-none  sm:w-[70vw] md:w-[60vw] lg:w-[50vw]"
               placeholder="Enter message"
             />
           </div>
@@ -102,7 +105,7 @@ const Contact = () => {
             )}
             <input
               type="submit"
-              value={isFormSubmitting ? "sending.." : "send"}
+              value={isFormSubmitting ? "Sending.." : "Send"}
               disabled={isFormSubmitting}
               className={`${
                 isFormSubmitting
